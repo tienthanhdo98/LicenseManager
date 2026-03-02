@@ -1,0 +1,11 @@
+C:\Users\treze\source\repos\KeyGen\Ultilities\bin\Debug\net8.0\Ultilities.deps.json
+C:\Users\treze\source\repos\KeyGen\Ultilities\bin\Debug\net8.0\Ultilities.dll
+C:\Users\treze\source\repos\KeyGen\Ultilities\bin\Debug\net8.0\Ultilities.pdb
+C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\Ultilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\Ultilities.AssemblyInfoInputs.cache
+C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\Ultilities.AssemblyInfo.cs
+C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\Ultilities.csproj.CoreCompileInputs.cache
+C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\Ultilities.dll
+C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\refint\Ultilities.dll
+C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\Ultilities.pdb
+C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\ref\Ultilities.dll

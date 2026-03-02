@@ -1,0 +1,11 @@
+C:\Users\treze\source\repos\KeyGen\Enums\bin\Debug\net8.0\Enums.deps.json
+C:\Users\treze\source\repos\KeyGen\Enums\bin\Debug\net8.0\Enums.dll
+C:\Users\treze\source\repos\KeyGen\Enums\bin\Debug\net8.0\Enums.pdb
+C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\Enums.AssemblyInfoInputs.cache
+C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\Enums.AssemblyInfo.cs
+C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\Enums.csproj.CoreCompileInputs.cache
+C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\Enums.dll
+C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\refint\Enums.dll
+C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\Enums.pdb
+C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\ref\Enums.dll

@@ -1,0 +1,64 @@
+﻿@using Models
+@model UserMenuComponentViewModel
+
+@if (Model != null && Model.User != null)
+{
+    <div class="d-flex align-items-center ms-3" id="kt_header_user_menu_toggle">
+        <!--begin::Menu wrapper-->
+        <div class="cursor-pointer symbol symbol-30px symbol-md-40px d-flex gap-1" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+            @if (string.IsNullOrEmpty(Model.User.Avatar))
+            {
+                <img src="~/images/avatar/blank.png" alt="image" />
+            }
+            else
+            {
+                <img src="@Model.User.Avatar" alt="image" />
+            }
+            <span class="fw-bold text-primary d-flex align-items-center fs-5" id=current_username>@Model.User.FullName</span>
+        </div>
+
+
+        <!--begin::User account menu-->
+        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+                <div class="menu-content d-flex align-items-center px-3">
+                    <!--begin::Avatar-->
+                    <div class="symbol symbol-50px me-5">
+                        @if (string.IsNullOrEmpty(Model.User.Avatar))
+                        {
+                            <img src="~/images/avatar/blank.png" alt="image" />
+                        }
+                        else
+                        {
+                            <img src="@Model.User.Avatar" alt="image" />
+                        }
+                    </div>
+                    <!--end::Avatar-->
+                    <!--begin::Username-->
+                    <div class="d-flex flex-column">
+                        <div class="fw-bold d-flex align-items-center fs-5">
+                            @Model.User.FullName
+                            @* <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span> *@
+                        </div>
+
+                        <a href="javascript:;" class="fw-semibold text-muted text-hover-primary fs-7">
+                            @Model.User.Email
+                        </a>
+                    </div>
+                    <!--end::Username-->
+                </div>
+            </div>
+            <div class="separator my-2"></div>
+            <div class="menu-item px-5">
+                
+                <a href="/Auth/Signout"
+                   class="menu-link px-5">
+                    Đăng xuất
+                </a>
+            </div>
+        </div>
+        <!--end::User account menu-->
+        <!--end::Menu wrapper-->
+    </div>
+}

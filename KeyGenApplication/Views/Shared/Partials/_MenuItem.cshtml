@@ -1,0 +1,52 @@
+@using Models
+@model List<MenuItemViewModel>
+
+@if (Model != null)
+{
+    @foreach (var item in Model)
+    {
+        var hasChild = item.Children.Any();
+        var activeClass = item.IsActive ? "active" : "";
+        var openClass = item.IsOpen ? "here show" : "";
+
+        @if (hasChild)
+        {
+            <!--begin:Menu item-->
+            <div data-kt-menu-trigger="click" class="menu-item menu-accordion @openClass">
+                <!--begin:Menu link-->
+                <span class="menu-link">
+                    <span class="menu-bullet">
+                        <span class="bullet bullet-dot"></span>
+                    </span>
+                    <span class="menu-title">@item.Name</span>
+                    <span class="menu-arrow"></span>
+                </span>
+                <!--end:Menu link-->
+                <!--begin:Menu sub-->
+                <div class="menu-sub menu-sub-accordion">
+                    @await Html.PartialAsync(
+                        "~/Views/Shared/Partials/_MenuItem.cshtml",
+                    item.Children
+                    )
+                </div>
+                <!--end:Menu sub-->
+            </div>
+            <!--end:Menu item-->
+        }
+        else
+        {
+            <!--begin:Menu item-->
+            <div class="menu-item">
+                <!--begin:Menu link-->
+                <a class="menu-link @activeClass" href="@item.Path">
+                    <span class="menu-bullet">
+                        <span class="bullet bullet-dot"></span>
+                    </span>
+                    <span class="menu-title">@item.Name</span>
+                </a>
+                <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+        }
+    }
+}

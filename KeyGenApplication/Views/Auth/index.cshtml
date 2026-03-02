@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "index";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+<div class="d-flex flex-column flex-root">
+	<!--begin::Authentication - Sign-in -->
+    <div class="d-flex flex-column flex-lg-row flex-column-fluid min-vh-100">
+        <!--begin::Left (Body)-->
+        <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1 justify-content-center align-items-center">
+            <!--begin::Card-->
+            <div class="bg-body rounded-4 w-100 w-md-600px p-20 shadow-sm">
+                <!--begin::Form-->
+                <form class="form w-100" id="kt_sign_in_form" asp-controller="Auth" asp-action="Login" method="post" novalidate>
+                    <div class="text-center mb-11">
+                        <h1 class="text-gray-900 fw-bolder mb-3">Đăng nhập</h1>
+                        <div class="text-gray-500 fw-semibold fs-6">Tài khoản</div>
+                    </div>
+
+                    <div class="text-gray-500 fw-semibold fs-6">
+                        @if (TempData["Warning"] != null)
+                        {
+                            <div class="alert alert-warning"><strong>Thông báo!</strong> @TempData["Warning"]</div>
+                        }
+                        @if (TempData["Error"] != null)
+                        {
+                            <div class="alert alert-danger"><strong>Thông báo!</strong> @TempData["Error"]</div>
+                        }
+                    </div>
+
+                    <div class="fv-row mb-8">
+                        <input type="text" name="username" placeholder="Tài khoản" autocomplete="off" class="form-control bg-transparent" />
+                    </div>
+
+                    <div class="fv-row mb-3">
+                        <input type="password" name="password" placeholder="Mật khẩu" autocomplete="off" class="form-control bg-transparent" />
+                    </div>
+
+                    <div class="d-grid mb-10">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="indicator-label">Đăng nhập</span>
+                            <span class="indicator-progress">
+                                Please wait...
+                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <!--end::Form-->
+            </div>
+            <!--end::Card-->
+        </div>
+        <!--end::Left (Body)-->
+        <!-- (Tuỳ chọn) Right aside image ở đây -->
+        <!-- <div class="d-none d-lg-flex w-lg-50 min-vh-100 overflow-hidden"> ... </div> -->
+    </div>
+
+	<!--end::Authentication - Sign-in-->
+</div>

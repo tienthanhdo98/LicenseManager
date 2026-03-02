@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\plugins\custom\ckeditor\" />
+    <Folder Include="wwwroot\plugins\custom\cookiealert\" />
+    <Folder Include="wwwroot\plugins\custom\cropper\" />
+    <Folder Include="wwwroot\plugins\custom\datatables\" />
+    <Folder Include="wwwroot\plugins\custom\draggable\" />
+    <Folder Include="wwwroot\plugins\custom\flotcharts\" />
+    <Folder Include="wwwroot\plugins\custom\formrepeater\" />
+    <Folder Include="wwwroot\plugins\custom\fslightbox\" />
+    <Folder Include="wwwroot\plugins\custom\fullcalendar\" />
+    <Folder Include="wwwroot\plugins\custom\jkanban\" />
+    <Folder Include="wwwroot\plugins\custom\jstree\images\jstree\" />
+    <Folder Include="wwwroot\plugins\custom\leaflet\" />
+    <Folder Include="wwwroot\plugins\custom\prismjs\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\content\dark\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\content\default\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\content\document\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\content\tinymce-5-dark\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\content\tinymce-5\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\content\writer\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\ui\oxide-dark\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\ui\oxide\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\ui\tinymce-5-dark\" />
+    <Folder Include="wwwroot\plugins\custom\tinymce\skins\ui\tinymce-5\" />
+    <Folder Include="wwwroot\plugins\custom\typedjs\" />
+    <Folder Include="wwwroot\plugins\custom\vis-timeline\" />
+    <Folder Include="wwwroot\plugins\global\fonts\%40fortawesome\" />
+    <Folder Include="wwwroot\plugins\global\fonts\bootstrap-icons\" />
+    <Folder Include="wwwroot\plugins\global\fonts\keenicons\" />
+    <Folder Include="wwwroot\plugins\global\fonts\line-awesome\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KeyGen\Enums\Enums.csproj" />
+    <ProjectReference Include="..\KeyGen\Ultilities\Ultilities.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+  </ItemGroup>
+
+</Project>

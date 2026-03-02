@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KeyGenApplication</title>
+
+    <link href="/metronic/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/metronic/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/site.css?v=@DateTime.Now.ToString("yyyyMMddhhmmss")" rel="stylesheet" />
+    <link href="~/plugins/custom/jstree/themes/default/style.min.css" rel="stylesheet" />
+    @await RenderSectionAsync("css", required: false)
+</head>
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed">
+
+	<div class="d-flex flex-column flex-root">
+		<!--begin::Page-->
+		<div class="page d-flex flex-row flex-column-fluid">
+			<!--begin::Aside-->
+			<div id="kt_aside" class="aside overflow-visible pb-5 pt-5 pt-lg-0" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'80px', '300px': '100px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle">
+				<!--begin::Brand-->
+				<div class="aside-logo py-8" id="kt_aside_logo">
+					<!--begin::Logo-->
+					<a href="/" class="d-flex align-items-center">
+						<img alt="Logo" src="~/images/tek4tv-logo.png" class="h-45px logo" />
+					</a>
+					<!--end::Logo-->
+				</div>
+				<!--end::Brand-->
+				<!--begin::Aside menu-->
+				<div class="aside-menu flex-column-fluid" id="kt_aside_menu">
+					<!--begin::Aside Menu-->
+					<div class="hover-scroll-y my-2 my-lg-5 scroll-ms"
+						 id="kt_aside_menu_wrapper"
+						 data-kt-scroll="true"
+						 data-kt-scroll-height="auto"
+						 data-kt-scroll-dependencies="#kt_aside_logo, #kt_aside_footer"
+						 data-kt-scroll-wrappers="#kt_aside, #kt_aside_menu"
+						 data-kt-scroll-offset="5px">
+						<!--begin::Menu-->
+						@await Component.InvokeAsync("Menu")
+						<!--end::Menu-->
+					</div>
+				</div>
+				<!--end::Aside menu-->
+			</div>
+			<!--end::Aside-->
+			<!--begin::Wrapper-->
+			<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+				<!--begin::Header-->
+				<!--begin::Header-->
+				<div id="kt_header" style="" class="header align-items-stretch">
+					<!--begin::Container-->
+					<div class="container-fluid d-flex align-items-stretch justify-content-between">
+						<!--begin::Aside mobile toggle-->
+						<div class="d-flex align-items-center d-lg-none ms-n1 me-2" title="Show aside menu">
+							<div class="btn btn-icon btn-active-color-primary w-30px h-30px w-md-40px h-md-40px" id="kt_aside_mobile_toggle">
+								<i class="ki-outline ki-abstract-14 fs-1"></i>
+							</div>
+						</div>
+						<!--end::Aside mobile toggle-->
+						<!--begin::Mobile logo-->
+						<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
+							<a href="index.html" class="d-lg-none">
+								<img alt="Logo" src="~/images/tek4tv-logo.png" class="h-25px" />
+							</a>
+						</div>
+						<!--end::Mobile logo-->
+						<!--begin::Wrapper-->
+						<div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+							<!--begin::Navbar-->
+							<div class="d-flex align-items-stretch" id="kt_header_nav">
+								<div class="d-none d-sm-block">
+									<div class="d-flex align-items-center pt-2">
+										<div class="text-center fs-2 fw-bold text-gray-800">
+											<span class="position-relative d-inline-block" style="color: #FE1D29">
+												<a class="opacity-75-hover" style="color: #3D97FE">Tek4TV License Manager</a>
+											</span>
+											<span class="d-flex fs-6 text-muted">Hệ thống quản trị</span>
+										</div>
+									</div>
+								</div>
+								<!--begin::Menu wrapper-->
+								<div class="header-menu align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_header_menu_mobile_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}">
+								</div>
+								<!--end::Menu wrapper-->
+							</div>
+							<!--end::Navbar-->
+							<!--begin::Toolbar wrapper-->
+							<div class="d-flex align-items-stretch flex-shrink-0">
+								<!--begin::Theme mode-->
+								<div class="d-flex align-items-center ms-1 ms-lg-3">
+									<!--begin::Menu toggle-->
+									<a href="#" class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px" data-kt-menu-trigger="{default:'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+										<i class="ki-outline ki-night-day theme-light-show fs-1"></i>
+										<i class="ki-outline ki-moon theme-dark-show fs-1"></i>
+									</a>
+									<!--begin::Menu toggle-->
+									<!--begin::Menu-->
+									<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-title-gray-700 menu-icon-gray-500 menu-active-bg menu-state-color fw-semibold py-4 fs-base w-150px" data-kt-menu="true" data-kt-element="theme-mode-menu">
+										<!--begin::Menu item-->
+										<div class="menu-item px-3 my-0">
+											<a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="light">
+												<span class="menu-icon" data-kt-element="icon">
+													<i class="ki-outline ki-night-day fs-2"></i>
+												</span>
+												<span class="menu-title">Light</span>
+											</a>
+										</div>
+										<!--end::Menu item-->
+										<!--begin::Menu item-->
+										<div class="menu-item px-3 my-0">
+											<a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="dark">
+												<span class="menu-icon" data-kt-element="icon">
+													<i class="ki-outline ki-moon fs-2"></i>
+												</span>
+												<span class="menu-title">Dark</span>
+											</a>
+										</div>
+										<!--end::Menu item-->
+										<!--begin::Menu item-->
+										<div class="menu-item px-3 my-0">
+											<a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="system">
+												<span class="menu-icon" data-kt-element="icon">
+													<i class="ki-outline ki-screen fs-2"></i>
+												</span>
+												<span class="menu-title">System</span>
+											</a>
+										</div>
+										<!--end::Menu item-->
+									</div>
+									<!--end::Menu-->
+								</div>
+								<!--end::Theme mode-->
+								<!--begin::User menu-->
+								@await Component.InvokeAsync("UserMenu")
+								<!--end::User menu-->
+								<!--begin::Heaeder menu toggle-->
+								<div class="d-flex align-items-center d-lg-none ms-2 me-n2" title="Show header menu">
+									<div class="btn btn-icon btn-active-color-primary w-30px h-30px w-md-40px h-md-40px" id="kt_header_menu_mobile_toggle">
+										<i class="ki-outline ki-burger-menu-2 fs-1"></i>
+									</div>
+								</div>
+								<!--end::Heaeder menu toggle-->
+							</div>
+							<!--end::Toolbar wrapper-->
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Container-->
+				</div>
+				<!--end::Header-->
+				<!--end::Header-->
+				<!--begin::Content-->
+				<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+					<!--begin: ToolBar-->
+					@await RenderSectionAsync("ToolBar", required: false)
+					<!--end:ToolBar-->
+					<div id="kt_container" class="flex-fill px-5 px-lg-10">
+						@RenderBody()
+					</div>
+				</div>
+				<!--end::Content-->
+			</div>
+			<!--end::Wrapper-->
+		</div>
+		<!--end::Page-->
+
+
+	</div>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="/metronic/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="/metronic/assets/js/scripts.bundle.js"></script>
+    <script src="/metronic/assets/js/widgets.bundle.js"></script>
+    <script src="/metronic/assets/js/custom/widgets.js"></script>
+    <script src="/metronic/assets/js/custom/apps/chat/chat.js"></script>
+    <script src="/metronic/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="/metronic/assets/js/custom/utilities/modals/create-app.js"></script>
+    <script src="/metronic/assets/js/custom/utilities/modals/users-search.js"></script>
+
+    <!--end::Custom Javascript-->
+    <script src="~/lib/knockoutjs/knockout-3.5.1.debug.js"></script>
+    <script src="~/lib/knockoutjs/knockout-3.5.1.js"></script>
+    <script src="~/lib/knockoutjs/knockout-sortable.min.js"></script>
+    <script src="~/lib/knockoutjs/knockout.mapping-latest.js"></script>
+    <script src="~/js/comboTreePlugin.js"></script>
+    <script src="~/plugins/custom/jstree/jstree.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

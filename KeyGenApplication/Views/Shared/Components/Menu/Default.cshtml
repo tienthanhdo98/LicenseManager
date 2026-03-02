@@ -1,0 +1,62 @@
+﻿@using Models
+@model List<MenuItemViewModel>
+
+@if (Model != null)
+{
+    <div class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500" id="#kt_aside_menu" data-kt-menu="true">
+        @foreach (var menu in Model)
+        {
+            var hasChild = menu.Children.Any();
+            var activeClass = menu.IsActive ? "active" : "";
+            var openClass = menu.IsOpen ? "here" : "";
+
+            @if (hasChild)
+            {
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="right-start" class="menu-item py-2 @openClass">
+                    <!--begin:Menu link-->
+                    <span class="menu-link menu-center w-100">
+                        <span class="menu-icon me-0">
+                            @Html.Raw(menu.Icon)
+                        </span>
+                        <span class="menu-title d-lg-block ms-2">@menu.Name</span>
+                    </span>
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-dropdown menu-sub-indention px-2 py-4 w-250px mh-75 overflow-auto">
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                            <!--begin:Menu content-->
+                            <div class="menu-content">
+                                <span class="menu-section fs-5 fw-bolder ps-1 py-1">@menu.Name</span>
+                            </div>
+                            <!--end:Menu content-->
+                        </div>
+                        <!--end:Menu item-->
+                        @await Html.PartialAsync(
+                            "~/Views/Shared/Partials/_MenuItem.cshtml",
+                            menu.Children
+                        )
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
+            }
+            else
+            {
+                <!--begin:Menu item-->
+                <a class="menu-item" href="@menu.Path">
+                    <!--begin:Menu link-->
+                    <span class="menu-link menu-center w-100 @activeClass">
+                        <span class="menu-icon me-0">
+                            @Html.Raw(menu.Icon)
+                        </span>
+                        <span class="menu-title d-lg-block ms-2">@menu.Name</span>
+                    </span>
+                    <!--end:Menu link-->
+                </a>
+                <!--end:Menu item-->
+            }
+        }
+    </div>
+}

@@ -9,3 +9,15 @@ C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\Ultilities.dll
 C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\refint\Ultilities.dll
 C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\Ultilities.pdb
 C:\Users\treze\source\repos\KeyGen\Ultilities\obj\Debug\net8.0\ref\Ultilities.dll
+D:\Git\LicenseManager\Ultilities\bin\Debug\net8.0\Ultilities.deps.json
+D:\Git\LicenseManager\Ultilities\bin\Debug\net8.0\Ultilities.dll
+D:\Git\LicenseManager\Ultilities\bin\Debug\net8.0\Ultilities.pdb
+D:\Git\LicenseManager\Ultilities\obj\Debug\net8.0\Ultilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\LicenseManager\Ultilities\obj\Debug\net8.0\Ultilities.AssemblyInfoInputs.cache
+D:\Git\LicenseManager\Ultilities\obj\Debug\net8.0\Ultilities.AssemblyInfo.cs
+D:\Git\LicenseManager\Ultilities\obj\Debug\net8.0\Ultilities.csproj.CoreCompileInputs.cache
+D:\Git\LicenseManager\Ultilities\obj\Debug\net8.0\Ultilities.sourcelink.json
+D:\Git\LicenseManager\Ultilities\obj\Debug\net8.0\Ultilities.dll
+D:\Git\LicenseManager\Ultilities\obj\Debug\net8.0\refint\Ultilities.dll
+D:\Git\LicenseManager\Ultilities\obj\Debug\net8.0\Ultilities.pdb
+D:\Git\LicenseManager\Ultilities\obj\Debug\net8.0\ref\Ultilities.dll

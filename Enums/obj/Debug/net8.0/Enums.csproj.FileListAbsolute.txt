@@ -9,3 +9,15 @@ C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\Enums.dll
 C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\refint\Enums.dll
 C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\Enums.pdb
 C:\Users\treze\source\repos\KeyGen\Enums\obj\Debug\net8.0\ref\Enums.dll
+D:\Git\LicenseManager\Enums\bin\Debug\net8.0\Enums.deps.json
+D:\Git\LicenseManager\Enums\bin\Debug\net8.0\Enums.dll
+D:\Git\LicenseManager\Enums\bin\Debug\net8.0\Enums.pdb
+D:\Git\LicenseManager\Enums\obj\Debug\net8.0\Enums.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\LicenseManager\Enums\obj\Debug\net8.0\Enums.AssemblyInfoInputs.cache
+D:\Git\LicenseManager\Enums\obj\Debug\net8.0\Enums.AssemblyInfo.cs
+D:\Git\LicenseManager\Enums\obj\Debug\net8.0\Enums.csproj.CoreCompileInputs.cache
+D:\Git\LicenseManager\Enums\obj\Debug\net8.0\Enums.sourcelink.json
+D:\Git\LicenseManager\Enums\obj\Debug\net8.0\Enums.dll
+D:\Git\LicenseManager\Enums\obj\Debug\net8.0\refint\Enums.dll
+D:\Git\LicenseManager\Enums\obj\Debug\net8.0\Enums.pdb
+D:\Git\LicenseManager\Enums\obj\Debug\net8.0\ref\Enums.dll

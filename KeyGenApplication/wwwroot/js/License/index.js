@@ -99,7 +99,7 @@ var LicenseViewModel = function (helper) {
                             item.id,
                             item.licenseName,
                             item.licenseValue,
-                            item.deviceID,
+                            item.deviceId,
                             '',
                             item.status,
                             item.createdTime,

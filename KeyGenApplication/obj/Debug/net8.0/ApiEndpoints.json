@@ -136,7 +136,7 @@
     "Parameters": [
       {
         "Name": "deviceId",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -152,6 +152,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KeyGenApplication.Areas.Api.LicenseController",
+    "Method": "GetLicenseByDeviceId",
+    "RelativePath": "api/License/GetLicenseByDeviceId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceId",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -256,8 +272,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "deviceId",
-        "Type": "System.Int32",
+        "Name": "csId",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

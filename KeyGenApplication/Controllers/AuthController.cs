@@ -63,7 +63,7 @@ namespace KeyGenApplication.Controllers
         private IEnumerable<Claim> GetUserClaims(UserViewModel user)
         {
             List<Claim> claims = new List<Claim>();
-            claims.Add(new Claim(ClaimTypes.NameIdentifier, user.ID.ToString()));
+            claims.Add(new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
             claims.Add(new Claim(ClaimTypes.Name, user.Username));
             claims.Add(new Claim(ClaimTypes.UserData, JsonConvert.SerializeObject(user)));
             return claims;

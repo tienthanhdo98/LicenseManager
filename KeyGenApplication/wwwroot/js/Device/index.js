@@ -1,10 +1,10 @@
-﻿function DeviceItem(ID, DeviceName, ChipsetID, License, LicenseStatus, Note) {
+﻿function DeviceItem(ID, DeviceName, ChipsetId, License, LicenseStatus, Note) {
     var self = this;
     self.id = ko.observable(ID || 0);
     self.licenseItem = ko.observable(License || new LicenseItem());
     self.licenseStatus = ko.observable(LicenseStatus || 4);
     self.deviceName = ko.observable(DeviceName || '');
-    self.chipsetID = ko.observable(ChipsetID || '');
+    self.chipsetId = ko.observable(ChipsetId || '');
     self.note = ko.observable(Note || '');
 }
 function LicenseItem(ID, LicenseName, LicenseValue, DeviceId, Status, CreatedTime, ExpiredTime) {
@@ -124,7 +124,7 @@ var DeviceViewModel = function (helper) {
                         var device = new DeviceItem(
                             item.id,
                             item.deviceName,
-                            item.chipsetID,
+                            item.chipsetId,
                             '',// License ban đầu
                             4,// License status ban đầu
                             item.note
@@ -154,9 +154,9 @@ var DeviceViewModel = function (helper) {
         $('#kt_modal_add_device').modal('show');
     }
     self.InsertDevice = async function () {
-        var chipsetID = self.selecteDeviceItem().chipsetID();
+        var chipsetId = self.selecteDeviceItem().chipsetId();
         var deviceName = self.selecteDeviceItem().deviceName();
-        if (!chipsetID || !deviceName) {
+        if (!chipsetId || !deviceName) {
             self.helper.showtoastError("Hãy nhập đủ các trường dữ liệu");
             return;
         }
@@ -317,7 +317,7 @@ var DeviceViewModel = function (helper) {
         console.log("getdetail", deviceItem.id());
 
         $.ajax({
-            url: "/api/License/GetByDeviceId",
+            url: "/api/License/GetLicenseByDeviceId",
             method: "GET",
             dataType: "json",
             data: { DeviceId: deviceItem.id() },
@@ -370,7 +370,7 @@ var DeviceViewModel = function (helper) {
         var formatEt = moment(self.selecteLicenseItem().expiredTime(), "DD/MM/YYYY", true)
             .format("YYYY-MM-DD[T]00:00:00");
         const data = {
-            ChipSetId: self.selecteDeviceItem().chipsetID(),
+            ChipSetId: self.selecteDeviceItem().chipsetId(),
             StartTime: formatCt,
             ExpiredTime: formatEt,
         };
@@ -399,7 +399,7 @@ var DeviceViewModel = function (helper) {
             var formatEt = moment(self.selecteLicenseItem().expiredTime(), "DD/MM/YYYY", true)
                 .format("YYYY-MM-DD[T]00:00:00");
             const data = {
-                DeviceID: self.selecteLicenseItem().deviceId(),
+                DeviceId: self.selecteLicenseItem().deviceId(),
                 LicenseName: self.selecteLicenseItem().licenseName(),
                 LicenseValue: self.selecteLicenseItem().licenseValue(),
                 Status: 1,

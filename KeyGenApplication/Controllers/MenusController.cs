@@ -37,7 +37,7 @@ namespace Controllers
                 list_menuParents.Add(new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem { Text = "Chọn danh mục cha", Value = "0" });
                 foreach (var item in meunParent)
                 {
-                    list_menuParents.Add(new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem { Text = item.Name, Value = item.ID.ToString() });
+                    list_menuParents.Add(new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem { Text = item.Name, Value = item.Id.ToString() });
                 }
                 ViewBag.MenuParents = list_menuParents;
                 //Kiểm tra superAdmin

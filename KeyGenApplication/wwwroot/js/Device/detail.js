@@ -1,24 +1,24 @@
-﻿function DeviceItem(ID, DeviceName, ChipsetID, License, LicenseStatus, Note) {
+﻿function DeviceItem(ID, DeviceName, ChipsetId, License, LicenseStatus, Note) {
     var self = this;
     self.id = ko.observable(ID || 0);
     self.licenseItem = ko.observable(License || new LicenseItem());
     self.licenseStatus = ko.observable(LicenseStatus || 4);
     self.deviceName = ko.observable(DeviceName || '');
-    self.chipsetID = ko.observable(ChipsetID || '');
+    self.chipsetId = ko.observable(ChipsetId || '');
     self.note = ko.observable(Note || '');
 }
-function LicenseItem(ID, LicenseName, LicenseValue, DeviceID, Status, CreatedTime, ExpiredTime) {
+function LicenseItem(ID, LicenseName, LicenseValue, DeviceId, Status, CreatedTime, ExpiredTime) {
     var self = this;
     self.id = ko.observable(ID || 0);
     self.licenseName = ko.observable(LicenseName || '');
     self.licenseValue = ko.observable(LicenseValue || '');
-    self.deviceID = ko.observable(DeviceID || 0);
+    self.deviceId = ko.observable(DeviceId || 0);
     self.status = ko.observable(Status || 0);
     self.createdTime = ko.observable(CreatedTime || null);
     self.expiredTime = ko.observable(ExpiredTime || null);
 }
 
-var DetailDeviceViewModel = function (deviceID,helper) {
+var DetailDeviceViewModel = function (deviceId,helper) {
     var self = this;
     self.helper = helper;
 
@@ -41,12 +41,12 @@ var DetailDeviceViewModel = function (deviceID,helper) {
     self.GetDetailDevice = async function () {
         self.selectedDeviceItem(new DeviceItem());
         self.selectedLicenseItem(new LicenseItem());
-        console.log("GetDetailDevice " + deviceID);
+        console.log("GetDetailDevice " + deviceId);
         $.ajax({
             url: "/api/Device/GetById",
             method: "GET",
             dataType: "json",
-            data: { ID: deviceID },
+            data: { ID: deviceId },
 
             success: function (response) {
                 const item = response && response.data;
@@ -56,7 +56,7 @@ var DetailDeviceViewModel = function (deviceID,helper) {
                     const deviceItem = new DeviceItem(
                         item.id,
                         item.deviceName,
-                        item.chipsetID,
+                        item.chipsetId,
                         "",
                         4,
                         item.note,
@@ -200,7 +200,7 @@ var DetailDeviceViewModel = function (deviceID,helper) {
     self.OpenAssignLicenseModal = function () {
 
 
-        self.selectedLicenseItem().deviceID(self.selectedDeviceItem().id()); // nhớ id() vì observable
+        self.selectedLicenseItem().deviceId(self.selectedDeviceItem().id()); // nhớ id() vì observable
 
         // mở modal bằng Bootstrap 5 (không cần data-bs-toggle nữa)
         $('#kt_modal_add_license').modal('show');
@@ -212,7 +212,7 @@ var DetailDeviceViewModel = function (deviceID,helper) {
     self.getAttachedLicense = function () {
         console.log("getAttachedLicense ", self.selectedDeviceItem().id());
         $.ajax({
-            url: "/api/License/GetByDeviceId",
+            url: "/api/License/GetLicenseByDeviceId",
             method: "GET",
             dataType: "json",
             data: { DeviceId: self.selectedDeviceItem().id() },
@@ -270,7 +270,7 @@ var DetailDeviceViewModel = function (deviceID,helper) {
             return;
         }
         const data = {
-            ChipSetId: self.selectedDeviceItem().chipsetID(),
+            ChipSetId: self.selectedDeviceItem().chipsetId(),
             StartTime: startTime,
             ExpiredTime: expiredTime,
         };
@@ -299,7 +299,7 @@ var DetailDeviceViewModel = function (deviceID,helper) {
         //}
         await self.generateLicense();
         const data = {        
-            DeviceID: self.selectedLicenseItem().deviceID(),
+            DeviceId: self.selectedLicenseItem().deviceId(),
             LicenseName: self.selectedLicenseItem().licenseName(),
             LicenseValue: self.selectedLicenseItem().licenseValue(),
             Status: 1,
@@ -354,6 +354,7 @@ var DetailDeviceViewModel = function (deviceID,helper) {
       
     self.UpdateLicense = async function () {
 
+        self.selectedLicenseItem().deviceId(deviceId);
 
         const ct = self.selectedLicenseItem().createdTime();
         const et = self.selectedLicenseItem().expiredTime();

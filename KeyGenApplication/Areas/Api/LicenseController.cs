@@ -4,10 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Services.Interfaces;
 using Services.Viewmodels;
-using System;
-using System.ComponentModel;
-using System.Data.Entity.Infrastructure;
-using System.Data.SqlClient;
 using System.Security.Cryptography;
 using Ultilities;
 
@@ -19,12 +15,14 @@ namespace KeyGenApplication.Areas.Api
     public class LicenseController : BaseController
     {
         private readonly ILicenseService _LicenseService;
+        private readonly IDeviceService _DeviceService;
         private readonly ILogger<LicenseController> _logger;
         private readonly string _privateKeyPkcs8Base64;
 
-        public LicenseController(ILicenseService iLicenseService, ILogger<LicenseController> logger, IConfiguration config) : base()
+        public LicenseController(ILicenseService iLicenseService, IDeviceService iDeviceService, ILogger<LicenseController> logger, IConfiguration config) : base()
         {
             _LicenseService = iLicenseService;
+            _DeviceService = iDeviceService;
             _logger = logger;
             _privateKeyPkcs8Base64 = config["License:PrivateKeyPkcs8Base64"] ?? "";
         }
@@ -145,7 +143,32 @@ namespace KeyGenApplication.Areas.Api
 
         [HttpGet]
         [Route("GetByDeviceId")]
-        public IActionResult GetByDeviceId([FromQuery] int deviceId)
+        public IActionResult GetByDeviceId([FromQuery] string deviceId)
+        {
+            try
+            {
+                _logger.LogInformation($"[GetByDeviceId] Request: {deviceId}");
+                var result = _DeviceService.GetByChipsetId(deviceId);
+                _logger.LogInformation($"[GetByDeviceId] Response: {deviceId}");
+                return Ok(new
+                {
+                    Code = 1,
+                    Data = result
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"[GetByDeviceId] Request: {JsonConvert.SerializeObject(new { DeviceId = deviceId })}");
+                return Ok(new
+                {
+                    Code = -1,
+                    Message = $"{ex.Message}"
+                });
+            }
+        }
+        [HttpGet]
+        [Route("GetLicenseByDeviceId")]
+        public IActionResult GetLicenseByDeviceId([FromQuery] int deviceId)
         {
             try
             {
@@ -177,7 +200,7 @@ namespace KeyGenApplication.Areas.Api
             {
 
                 _logger.LogInformation($"[Delete] Request: {JsonConvert.SerializeObject(viewModel)}");
-                var item = _LicenseService.Delete(viewModel.ID, CurrentUserViewModel.Username);
+                var item = _LicenseService.Delete(viewModel.Id, CurrentUserViewModel.Username);
  
                 if (item > 0)
                 {
@@ -219,7 +242,7 @@ namespace KeyGenApplication.Areas.Api
             {
 
                 _logger.LogInformation($"[Revoke] Request: {JsonConvert.SerializeObject(viewModel)}");
-                var item = _LicenseService.Revoke(viewModel.ID, CurrentUserViewModel.Username);
+                var item = _LicenseService.Revoke(viewModel.Id, CurrentUserViewModel.Username);
 
                 if (item > 0)
                 {
@@ -336,13 +359,38 @@ namespace KeyGenApplication.Areas.Api
 
         [AllowAnonymous]
         [HttpGet("ValidateLicense")]
-        public IActionResult ValidateLicense([FromQuery] int deviceId)
+        public IActionResult ValidateLicense([FromQuery] string csId)
         {
             try
             {
-                var licenseItem = _LicenseService.GetByDeviceId(deviceId);
+                var deviceItem = _DeviceService.GetByChipsetId(csId);
 
                 // 1) Chưa có device
+                if (deviceItem == null)
+                {
+                    return Ok(new
+                    {
+                        Code = 0,
+                        Data = new
+                        {
+                            HasLicense = false
+                        }
+                    });
+                }
+                // 2) Device bị xóa 
+                if (deviceItem.Deleted)
+                {
+                    return Ok(new
+                    {
+                        Code = 0,
+                        Data = new
+                        {
+                            HasLicense = false,           
+                        }
+                    });
+                }
+                var licenseItem = _LicenseService.GetByDeviceId(deviceItem.Id);
+                //3) Chưa có license
                 if (licenseItem == null)
                 {
                     return Ok(new
@@ -354,7 +402,7 @@ namespace KeyGenApplication.Areas.Api
                         }
                     });
                 }
-                // 2) License bị xóa (nếu bạn dùng soft delete)
+                //4) License bị xóa
                 if (licenseItem.Deleted)
                 {
                     return Ok(new
@@ -362,7 +410,7 @@ namespace KeyGenApplication.Areas.Api
                         Code = 0,
                         Data = new
                         {
-                            HasLicense = false,           
+                            HasLicense = false,
                         }
                     });
                 }
@@ -375,6 +423,7 @@ namespace KeyGenApplication.Areas.Api
                 // 4) Check trạng thái
                 // Tùy bạn quy ước: ví dụ Status == 1 là Active
                 var isActive = licenseItem.Status == 1;
+
                 // 5) Kết luận tổng
                 var isValid = !isExpired && isActive && !licenseItem.Deleted;
 

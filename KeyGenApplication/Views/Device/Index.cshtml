@@ -151,10 +151,10 @@
                                             <!--begin::Input group-->
                                             <div class="fv-row mb-7 fv-plugins-icon-container">
                                                 <!--begin::Label-->
-                                                <label class="required fw-semibold fs-6 mb-2">ChipsetID</label>
+                                                <label class="required fw-semibold fs-6 mb-2">ChipsetId</label>
                                                 <!--end::Label-->
                                                 <!--begin::Input-->
-                                                <input data-bind="value: $root.selecteDeviceItem().chipsetID" class="form-control form-control-solid mb-3 mb-lg-0">
+                                                <input data-bind="value: $root.selecteDeviceItem().chipsetId" class="form-control form-control-solid mb-3 mb-lg-0">
                                                 <!--end::Input-->
                                                 <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
                                             </div>
@@ -202,7 +202,7 @@
                             <thead>
                                 <tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
                                     <th class="min-w-225px" rowspan="1" colspan="1" tabindex="0"><span class="dt-column-title">Name</span></th>
-                                    <th class="min-w-125px" rowspan="1" colspan="1" tabindex="0"><span class="dt-column-title">ChipsetID</span></th>
+                                    <th class="min-w-125px" rowspan="1" colspan="1" tabindex="0"><span class="dt-column-title">ChipsetId</span></th>
                                     <th class="min-w-125px" rowspan="1" colspan="1" tabindex="0"><span class="dt-column-title">License</span></th>
                                     <th class="min-w-125px" rowspan="1" colspan="1" tabindex="0"><span class="dt-column-title">License status</span></th>
                                     <th class="min-w-125px" rowspan="1" colspan="1" tabindex="0"><span class="dt-column-title">Note</span></th>
@@ -217,15 +217,15 @@
                                            style="cursor:pointer;"
                                            data-bind="text: deviceName, click: function(){ $root.clickDeviceItem($data, $index())}"></a>
                                     </td>
-                                    <td data-bind="text: chipsetID">
+                                    <td data-bind="text: chipsetId">
                                     </td>
                                     <td class="license-cell">
                                         <!-- nếu có licenseValue -->
                                         <!-- ko if: licenseItem() && licenseItem().licenseValue && licenseItem().licenseValue() && licenseItem().licenseValue().trim() !== '' -->
                                         <span data-bind="
-             text: licenseItem().licenseValue,
-             attr: { 'data-bs-toggle': 'tooltip', title: licenseItem().licenseValue() }
-           "></span>
+                                         text: licenseItem().licenseValue,
+                                         attr: { 'data-bs-toggle': 'tooltip', title: licenseItem().licenseValue() }
+                                       "></span>
                                         <!-- /ko -->
                                         <!-- nếu chưa có license -->
                                         <!-- ko ifnot: licenseItem() && licenseItem().licenseValue && licenseItem().licenseValue() && licenseItem().licenseValue().trim() !== '' -->

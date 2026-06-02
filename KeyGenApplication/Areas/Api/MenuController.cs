@@ -109,7 +109,7 @@ namespace Areas.Api.Controllers
             {
                 _logger.LogInformation($"[GetByParentId] Request: {JsonConvert.SerializeObject(model)}");
                 var menus = _IMenuService.GetByParentId(0, model.ApplicationId, model.SiteId);
-                menus.Insert(0, new MenuViewModel { ID = 0, Name = "Chọn danh mục cha" });
+                menus.Insert(0, new MenuViewModel { Id = 0, Name = "Chọn danh mục cha" });
                 _logger.LogInformation($"[GetByParentId] Response: {JsonConvert.SerializeObject(menus)}");
                 return Ok(new
                 {

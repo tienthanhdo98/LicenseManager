@@ -155,7 +155,7 @@ namespace KeyGenApplication.Areas.Api
             {
 
                 _logger.LogInformation($"[Delete] Request: {JsonConvert.SerializeObject(viewModel)}");
-                var item = _IDeviceService.Delete(viewModel.ID, CurrentUserViewModel.Username);
+                var item = _IDeviceService.Delete(viewModel.Id, CurrentUserViewModel.Username);
 
                 if (item > 0)
                 {

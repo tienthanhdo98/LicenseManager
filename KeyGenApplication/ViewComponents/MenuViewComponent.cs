@@ -57,7 +57,7 @@ namespace Models
                     .OrderBy(x => x.Order)
                     .Select(x => new MenuItemViewModel
                     {
-                        Id = x.ID,
+                        Id = x.Id,
                         ParentId = x.ParentId,
                         Name = x.Name,
                         Path = x.Path,

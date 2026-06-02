@@ -3,88 +3,13 @@
   "WorkspaceRootPath": "D:\\Git\\LicenseManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26362327-3715-15F7-270A-991B2D159620}|C:\\Users\\treze\\source\\repos\\KeyGenApplication\\KeyGenApplication.csproj|c:\\users\\treze\\source\\repos\\keygenapplication\\viewcomponents\\menuviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26362327-3715-15F7-270A-991B2D159620}|C:\\Users\\treze\\source\\repos\\KeyGenApplication\\KeyGenApplication.csproj|c:\\users\\treze\\source\\repos\\keygenapplication\\wwwroot\\js\\device\\detail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26362327-3715-15F7-270A-991B2D159620}|C:\\Users\\treze\\source\\repos\\KeyGenApplication\\KeyGenApplication.csproj|c:\\users\\treze\\source\\repos\\keygenapplication\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26362327-3715-15F7-270A-991B2D159620}|C:\\Users\\treze\\source\\repos\\KeyGenApplication\\KeyGenApplication.csproj|c:\\users\\treze\\source\\repos\\keygenapplication\\areas\\api\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26362327-3715-15F7-270A-991B2D159620}|C:\\Users\\treze\\source\\repos\\KeyGenApplication\\KeyGenApplication.csproj|c:\\users\\treze\\source\\repos\\keygenapplication\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26362327-3715-15F7-270A-991B2D159620}|C:\\Users\\treze\\source\\repos\\KeyGenApplication\\KeyGenApplication.csproj|c:\\users\\treze\\source\\repos\\keygenapplication\\areas\\api\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EB0ADE-E872-8381-B739-BB60350BB43C}|C:\\Users\\treze\\source\\repos\\Repositories\\Repositories.csproj|c:\\users\\treze\\source\\repos\\repositories\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26362327-3715-15F7-270A-991B2D159620}|C:\\Users\\treze\\source\\repos\\KeyGenApplication\\KeyGenApplication.csproj|c:\\users\\treze\\source\\repos\\keygenapplication\\wwwroot\\js\\device\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26362327-3715-15F7-270A-991B2D159620}|C:\\Users\\treze\\source\\repos\\KeyGenApplication\\KeyGenApplication.csproj|c:\\users\\treze\\source\\repos\\keygenapplication\\areas\\api\\licensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EB0ADE-E872-8381-B739-BB60350BB43C}|C:\\Users\\treze\\source\\repos\\Repositories\\Repositories.csproj|c:\\users\\treze\\source\\repos\\repositories\\licenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\licenseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EB0ADE-E872-8381-B739-BB60350BB43C}|C:\\Users\\treze\\source\\repos\\Repositories\\Repositories.csproj|c:\\users\\treze\\source\\repos\\repositories\\menurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\viewmodels\\menuindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EB0ADE-E872-8381-B739-BB60350BB43C}|C:\\Users\\treze\\source\\repos\\Repositories\\Repositories.csproj|c:\\users\\treze\\source\\repos\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\viewmodels\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\viewmodels\\licenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\viewmodels\\licenserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\viewmodels\\deviceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\interface\\ilicenseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1B29F4D-C1DC-C21A-A8D4-2816970E7491}|C:\\Users\\treze\\source\\repos\\Services\\Services.csproj|c:\\users\\treze\\source\\repos\\services\\interface\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EB0ADE-E872-8381-B739-BB60350BB43C}|C:\\Users\\treze\\source\\repos\\Repositories\\Repositories.csproj|c:\\users\\treze\\source\\repos\\repositories\\interfaces\\ilicenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EB0ADE-E872-8381-B739-BB60350BB43C}|C:\\Users\\treze\\source\\repos\\Repositories\\Repositories.csproj|c:\\users\\treze\\source\\repos\\repositories\\interfaces\\idevicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EB0ADE-E872-8381-B739-BB60350BB43C}|C:\\Users\\treze\\source\\repos\\Repositories\\Repositories.csproj|c:\\users\\treze\\source\\repos\\repositories\\entities\\licenseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EB0ADE-E872-8381-B739-BB60350BB43C}|C:\\Users\\treze\\source\\repos\\Repositories\\Repositories.csproj|c:\\users\\treze\\source\\repos\\repositories\\entities\\deviceentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EB0ADE-E872-8381-B739-BB60350BB43C}|C:\\Users\\treze\\source\\repos\\Repositories\\Repositories.csproj|c:\\users\\treze\\source\\repos\\repositories\\entities\\baseentitycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,297 +19,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "detail.js",
+              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\wwwroot\\js\\Device\\detail.js",
+              "ToolTip": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\wwwroot\\js\\Device\\detail.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-01T18:46:18.271Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MenuViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\ViewComponents\\MenuViewComponent.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\ViewComponents\\MenuViewComponent.cs*",
-              "ViewState": "AgIAADAAAAAAAAAAAADwvzsAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LicenseController.cs",
+              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Areas\\Api\\LicenseController.cs",
+              "ToolTip": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Areas\\Api\\LicenseController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAlwDoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T02:35:09.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T19:38:17.859Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAADUAAAAAAAAAAAAQwEEAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T02:35:03.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Areas\\Api\\MenuController.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Areas\\Api\\MenuController.cs*",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAwG8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T02:34:57.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MenusController.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Controllers\\MenusController.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Controllers\\MenusController.cs*",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwCcAAACAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T02:34:49.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeviceController.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Areas\\Api\\DeviceController.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Areas\\Api\\DeviceController.cs*",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAQwJ4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T02:34:43.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LicenseService.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\LicenseService.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\LicenseService.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAADwv1oAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:50:42.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MenuRepository.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Repositories\\MenuRepository.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Repositories\\MenuRepository.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAADwv2YAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:50:36.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MenuIndexViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\MenuIndexViewModel.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\MenuIndexViewModel.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAADwvyUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:50:31.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MenuService.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\MenuService.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\MenuService.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAQwEwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:50:24.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAQwCkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:50:18.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\UserService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAwCIAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:50:08.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\UserViewModel.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\UserViewModel.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA5wA0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:50:01.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MenuViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\MenuViewModel.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\MenuViewModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:49:54.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BaseViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\BaseViewModel.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\BaseViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:47:52.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LicenseViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\LicenseViewModel.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\LicenseViewModel.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAswA8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:47:30.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "LicenseRequest.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\LicenseRequest.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\LicenseRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:47:28.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DeviceViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\DeviceViewModel.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\Viewmodels\\DeviceViewModel.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:47:12.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DeviceService.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\DeviceService.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\DeviceService.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwEoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:46:45.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ILicenseService.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\Interface\\ILicenseService.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\Interface\\ILicenseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:32:29.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IDeviceService.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Services\\Interface\\IDeviceService.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Services\\Interface\\IDeviceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:46:32.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeviceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Repositories\\DeviceRepository.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Repositories\\DeviceRepository.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAUwDcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:45:22.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ILicenseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Repositories\\Interfaces\\ILicenseRepository.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Repositories\\Interfaces\\ILicenseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:45:13.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IDeviceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Repositories\\Interfaces\\IDeviceRepository.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Repositories\\Interfaces\\IDeviceRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:45:01.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "LicenseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Repositories\\Entities\\LicenseEntity.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Repositories\\Entities\\LicenseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:44:33.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DeviceEntity.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Repositories\\Entities\\DeviceEntity.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Repositories\\Entities\\DeviceEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:44:26.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "BaseEntitycs.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Repositories\\Entities\\BaseEntitycs.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Repositories\\Entities\\BaseEntitycs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:44:20.619Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LicenseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\Repositories\\LicenseRepository.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\Repositories\\LicenseRepository.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAADwv2wAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:33:35.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LicenseController.cs",
-              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Areas\\Api\\LicenseController.cs",
-              "ToolTip": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\Areas\\Api\\LicenseController.cs",
-              "ViewState": "AgIAAGcBAAAAAAAAAAAIwHIBAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T02:25:40.469Z"
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\wwwroot\\js\\Device\\index.js",
+              "ToolTip": "C:\\Users\\treze\\source\\repos\\KeyGenApplication\\wwwroot\\js\\Device\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8BAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-01T19:29:03.634Z"
             }
           ]
         }

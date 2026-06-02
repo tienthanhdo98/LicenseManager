@@ -13,6 +13,7 @@ namespace Repositories.Interfaces
         int? Update(DeviceEntity entity);
         int? Delete(int iD, String modifiedUser);
         DeviceEntity GetById(int Id);
+        DeviceEntity GetByChipsetId(string Id);
 
         ListDeviceEntity Search(String deviceName = "", int status = 0, int pageIndex = 1, int pageSize = 25);
 

@@ -16,7 +16,7 @@ namespace Services.ViewModels
                 isActive = false;
             }
             IsActive = isActive;
-            ID = entity.ID;
+            Id = entity.Id;
             Name = entity.Name;
             ParentId = entity.ParentId;
             Path = entity.Path;

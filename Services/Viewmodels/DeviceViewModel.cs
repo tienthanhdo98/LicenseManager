@@ -8,10 +8,10 @@ namespace Services.Viewmodels
         public DeviceViewModel() { }
         public DeviceViewModel(DeviceEntity entity) : base(entity)
         {
-            ID = entity.ID;
+            Id = entity.Id;
             DeviceName = entity.DeviceName;
             Deleted = entity.Deleted;
-            ChipsetID = entity.ChipsetID;
+            ChipsetId = entity.ChipsetId;
             Note = entity.Note;
             CreatedTime = entity.CreatedTime;
             CreatedUser = entity.CreatedUser;
@@ -19,11 +19,11 @@ namespace Services.Viewmodels
             ModifiedTime = entity.ModifiedTime;
 
         }
-        public int ID { get; set; }
+
         public string DeviceName { get; set; }
         public string Note { get; set; } = "";
         public bool Deleted { get; set; }
-        public string ChipsetID { get; set; }
+        public string ChipsetId { get; set; }
 
     }
     public class ListDeviceViewModel

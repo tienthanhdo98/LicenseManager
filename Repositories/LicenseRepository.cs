@@ -18,7 +18,7 @@ namespace Repositories
         {
             string sql = "sp_Licenses_Deleted";
             DynamicParameters dParameter = new DynamicParameters();
-            dParameter.Add($"@ID", iD);
+            dParameter.Add($"@Id", iD);
             dParameter.Add($"@ModifiedUser", modifiedUser);
             var result = _databaseExecuteRepository.ExcecuteNonQuery(sql, dParameter);
             return result;
@@ -28,7 +28,7 @@ namespace Repositories
         {
             string sql = "sp_Licenses_Revoke";
             DynamicParameters dParameter = new DynamicParameters();
-            dParameter.Add($"@ID", iD);
+            dParameter.Add($"@Id", iD);
             dParameter.Add($"@ModifiedUser", modifiedUser);
             var result = _databaseExecuteRepository.ExcecuteNonQuery(sql, dParameter);
             return result;
@@ -39,7 +39,7 @@ namespace Repositories
         {
             string sql = "sp_Licenses_GetById";
             var dParameter = new Dictionary<string, string>();
-            dParameter["ID"] = Id.ToString();
+            dParameter["Id"] = Id.ToString();
             var result = _databaseExecuteRepository.ExcecuteProceduceQuery<LicenseEntity>(sql, dParameter);
             if (result == null)
                 return null;
@@ -50,7 +50,7 @@ namespace Repositories
         {
             string sql = "sp_Licenses_GetByDeviceId";
             var dParameter = new Dictionary<string, string>();
-            dParameter["DeviceID"] = Id.ToString();
+            dParameter["DeviceId"] = Id.ToString();
             var result = _databaseExecuteRepository.ExcecuteProceduceQuery<LicenseEntity>(sql, dParameter);
             if (result == null)
                 return null;
@@ -62,7 +62,7 @@ namespace Repositories
         {
             string sql = "sp_Licenses_Insert";
             DynamicParameters dParameter = new DynamicParameters();
-            dParameter.Add($"@DeviceID", entity.DeviceID);
+            dParameter.Add($"@DeviceId", entity.DeviceId);
             dParameter.Add($"@LicenseName", entity.LicenseName);
             dParameter.Add($"@LicenseValue", entity.LicenseValue);
             dParameter.Add($"@Status", entity.Status);
@@ -105,8 +105,8 @@ namespace Repositories
 
             string sql = "sp_Licenses_Update";
             DynamicParameters dParameter = new DynamicParameters();
-            dParameter.Add($"@ID", entity.ID);
-            dParameter.Add($"@DeviceID", entity.DeviceID);
+            dParameter.Add($"@Id", entity.Id);
+            dParameter.Add($"@DeviceId", entity.DeviceId);
             dParameter.Add($"@LicenseName", entity.LicenseName);
             dParameter.Add($"@Status", entity.Status);
             dParameter.Add($"@CreatedTime", entity.CreatedTime);

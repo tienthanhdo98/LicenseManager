@@ -10,13 +10,13 @@ namespace ViewModels
         public BaseViewModel() { }
         public BaseViewModel(BaseEntity entity)
         {
-            ID = entity.ID;
+            Id = entity.Id;
             CreatedTime = entity.CreatedTime;
             CreatedUser = entity.CreatedUser;
             ModifiedTime = entity.ModifiedTime;
             ModifiedUser = entity.ModifiedUser;
         }
-        public int ID { get; set; }
+        public int Id { get; set; }
         public DateTime CreatedTime { get; set; }
         public string CreatedUser { get; set; } = "";
         public DateTime ModifiedTime { get; set; }

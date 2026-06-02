@@ -9,8 +9,8 @@ namespace Services.Viewmodels
 
         public LicenseViewModel(LicenseEntity entity) : base(entity)
         {
-            ID = entity.ID;
-            DeviceID = entity.DeviceID;
+            Id = entity.Id;
+            DeviceId = entity.DeviceId;
             LicenseName = entity.LicenseName;
             LicenseValue = entity.LicenseValue;
             Deleted = entity.Deleted;
@@ -22,7 +22,7 @@ namespace Services.Viewmodels
             ModifiedTime = entity.ModifiedTime;
 
         }
-        public int DeviceID { get; set; }
+        public int DeviceId { get; set; }
 
         public string LicenseName { get; set; }
 

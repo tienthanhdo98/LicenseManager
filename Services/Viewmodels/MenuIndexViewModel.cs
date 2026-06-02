@@ -35,7 +35,7 @@ namespace Services.ViewModels
                 isActive = false;
             }
 
-            Id = model.ID;
+            Id = model.Id;
             Name = model.Name;
             Path = model.Path;
             Icon = model.Icon;

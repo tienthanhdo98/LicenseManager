@@ -32,7 +32,7 @@ namespace Services
         public int? UpdateUser(UserViewModel viewModel)
         {
             var userEntity = new UserEntity();
-            userEntity.ID = viewModel.ID;
+            userEntity.Id = viewModel.Id;
             userEntity.Username = viewModel.Username;
             userEntity.FullName = viewModel.FullName;
             userEntity.Email = viewModel.Email;

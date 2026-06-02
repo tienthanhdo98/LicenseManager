@@ -39,7 +39,7 @@ namespace Repositories
         {
             string sql = "sp_Users_Update";
             DynamicParameters dParameter = new DynamicParameters();
-            dParameter.Add($"@Id", model.ID);
+            dParameter.Add($"@Id", model.Id);
             dParameter.Add($"@PasswordHash", model.PasswordHash);
             dParameter.Add($"@FullName", model.FullName);
             dParameter.Add($"@Email", model.Email);

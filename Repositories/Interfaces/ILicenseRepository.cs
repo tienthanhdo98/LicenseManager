@@ -9,7 +9,7 @@ namespace Repositories.Interfaces
         int? Delete(int iD, String modifiedUser);
         int? Revoke(int iD, String modifiedUser);
         LicenseEntity GetById(int iD);
-        LicenseEntity GetByDeviceId(int deviceID);
+        LicenseEntity GetByDeviceId(int iD);
         ListLicenseEntity Search(String licenseName = "", int status = 0, int pageIndex = 1, int pageSize = 25);
     }
 }

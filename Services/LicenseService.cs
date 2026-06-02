@@ -35,9 +35,9 @@ namespace Services
                 return null;
             return new LicenseViewModel(result);
         }
-        public LicenseViewModel GetByDeviceId(int deviceID)
+        public LicenseViewModel GetByDeviceId(int Id)
         {
-            var result = _ILicenseRepository.GetByDeviceId(deviceID);
+            var result = _ILicenseRepository.GetByDeviceId(Id);
             if (result == null)
                 return null;
             return new LicenseViewModel(result);
@@ -48,8 +48,8 @@ namespace Services
         
             var entity = new LicenseEntity
             {
-                ID = viewModel.ID,
-                DeviceID = viewModel.DeviceID,
+                Id = viewModel.Id,
+                DeviceId = viewModel.DeviceId,
                 LicenseName = viewModel.LicenseName,
                 LicenseValue = viewModel.LicenseValue,
                 Deleted = viewModel.Deleted,
@@ -87,8 +87,8 @@ namespace Services
         {
             var entity = new LicenseEntity
             {
-                ID = viewModel.ID,
-                DeviceID = viewModel.DeviceID,
+                Id = viewModel.Id,
+                DeviceId = viewModel.DeviceId,
                 LicenseName = viewModel.LicenseName,
                 LicenseValue = viewModel.LicenseValue,
                 Deleted = viewModel.Deleted,

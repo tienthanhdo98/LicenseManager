@@ -37,6 +37,18 @@ namespace Repositories
             return result;
 
         }
+        public DeviceEntity GetByChipsetId(string Id)
+        {
+            string sql = "sp_Devices_GetByChipSetId";
+            var dParameter = new Dictionary<string, string>();
+            dParameter["ChipsetId"] = Id.ToString();
+                  
+            var result = _databaseExecuteRepository.ExcecuteProceduceQuery<DeviceEntity>(sql, dParameter);
+            if (result == null)
+                return null;
+            return result;
+
+        }
 
 
         public int? Insert(DeviceEntity entity)
@@ -44,7 +56,7 @@ namespace Repositories
             string sql = "sp_Devices_Insert";
             DynamicParameters dParameter = new DynamicParameters();
             dParameter.Add($"@DeviceName", entity.DeviceName);
-            dParameter.Add($"@ChipsetID", entity.ChipsetID);
+            dParameter.Add($"@ChipsetId", entity.ChipsetId);
             dParameter.Add($"@Note", entity.Note);
             dParameter.Add($"@CreatedUser", entity.CreatedUser);
             dParameter.Add($"@ModifiedUser", entity.ModifiedUser);
@@ -80,7 +92,7 @@ namespace Repositories
 
             string sql = "sp_Devices_Update";
             DynamicParameters dParameter = new DynamicParameters();
-            dParameter.Add($"@ID", entity.ID);
+            dParameter.Add($"@Id", entity.Id);
             dParameter.Add($"@DeviceName", entity.DeviceName);
             dParameter.Add($"@Note", entity.Note);
             dParameter.Add($"@ModifiedUser", entity.ModifiedUser);

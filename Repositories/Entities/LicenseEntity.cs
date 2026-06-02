@@ -4,12 +4,12 @@ namespace Repositories.Entities
 {
     public class LicenseEntity : BaseEntity
     {
-        public int ID { get; set; }
-        public int DeviceID { get; set; }
+        public int Id { get; set; }
+        public int DeviceId { get; set; }
 
-        public string LicenseName { get; set; }
+        public string LicenseName { get; set; } = "";
 
-        public string LicenseValue { get; set; }
+        public string LicenseValue { get; set; } = "";
 
         public bool Deleted { get; set; }
 

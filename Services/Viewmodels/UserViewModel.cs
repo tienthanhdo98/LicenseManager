@@ -11,7 +11,7 @@ namespace Services.Viewmodels
         }
         public UserViewModel(UserEntity entity)
         {
-            ID = entity.ID;
+            Id = entity.Id;
             Username = entity.Username;
             PasswordHash = entity.PasswordHash;
             FullName = entity.FullName;

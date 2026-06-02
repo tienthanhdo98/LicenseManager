@@ -100,7 +100,7 @@ namespace Repositories
         {
             string sql = "sp_Menus_Update";
             DynamicParameters dParameter = new DynamicParameters();
-            dParameter.Add($"@Id", model.ID);
+            dParameter.Add($"@Id", model.Id);
             dParameter.Add($"@Name", model.Name);
             dParameter.Add($"@ParentId", model.ParentId);
             dParameter.Add($"@Path", model.Path);

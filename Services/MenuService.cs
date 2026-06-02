@@ -74,7 +74,7 @@ namespace Services
         public int Update(MenuViewModel model)
         {
             var entity = new MenuEntity();
-            entity.ID = model.ID;
+            entity.Id = model.Id;
             entity.Name = model.Name;
             entity.ParentId = model.ParentId;
             entity.Path = model.Path;

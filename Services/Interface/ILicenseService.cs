@@ -10,7 +10,7 @@ namespace Services.Interfaces
         int? Delete(int iD, String modifiedUser);
         int? Revoke(int iD, String modifiedUser);
         LicenseViewModel GetById(int iD);
-        LicenseViewModel GetByDeviceId(int DeviceID);
+        LicenseViewModel GetByDeviceId(int iD);
         ListLicenseViewModel Search(String licenseName = "", int status = 0, int pageIndex = 1, int pageSize = 25);
     }
 }

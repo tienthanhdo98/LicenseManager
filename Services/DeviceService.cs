@@ -29,6 +29,14 @@ namespace Services
                 return null;
             return new DeviceViewModel(result);
         }
+     
+        public DeviceViewModel GetByChipsetId(string Id)
+        {
+            var result = _IDeviceRepository.GetByChipsetId(Id);
+            if (result == null)
+                return null;
+            return new DeviceViewModel(result);
+        }
    
 
         public int? Insert(DeviceViewModel viewModel)
@@ -37,7 +45,7 @@ namespace Services
             {
                 DeviceName = viewModel.DeviceName,
                 Note = viewModel.Note,
-                ChipsetID = viewModel.ChipsetID,
+                ChipsetId = viewModel.ChipsetId,
                 CreatedUser = viewModel.CreatedUser,
                 ModifiedUser = viewModel.ModifiedUser,
             };
@@ -67,11 +75,11 @@ namespace Services
         {
             var entity = new DeviceEntity
             {
-                ID = viewModel.ID,
+                Id = viewModel.Id,
                 DeviceName = viewModel.DeviceName,
                 Deleted = viewModel.Deleted,
                 Note = viewModel.Note,
-                ChipsetID = viewModel.ChipsetID,
+                ChipsetId = viewModel.ChipsetId,
                 CreatedUser = viewModel.CreatedUser,
                 ModifiedUser = viewModel.ModifiedUser,
             };
@@ -81,5 +89,7 @@ namespace Services
                 return null;
             return result;
         }
+
+       
     }
 }
